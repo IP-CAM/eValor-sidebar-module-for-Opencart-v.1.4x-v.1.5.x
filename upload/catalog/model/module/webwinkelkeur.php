@@ -31,7 +31,7 @@ class ModelModuleWebwinkelkeur extends Model {
                 );
                 if($noremail)
                     $parameters['noremail'] = '1';
-                $url = 'http://www.webwinkelkeur.nl/api.php?' . http_build_query($parameters);
+                $url = 'http://www.evalor.es/api.php?' . http_build_query($parameters);
                 $retriever = new Peschar_URLRetriever();
                 $response = $retriever->retrieve($url);
                 if(preg_match('|^Success:|', $response) || preg_match('|invite already sent|', $response)) {

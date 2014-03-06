@@ -5,7 +5,7 @@ class ControllerModuleWebwinkelkeur extends Controller {
 
         $this->load->model('module/webwinkelkeur');
 
-        $this->document->setTitle('WebwinkelKeur');
+        $this->document->setTitle('eValor');
 
         $this->data['error_warning'] = array();
 
@@ -34,7 +34,7 @@ class ControllerModuleWebwinkelkeur extends Controller {
    		);
 
    		$this->data['breadcrumbs'][] = array(
-       		'text'      => 'WebwinkelKeur',
+       		'text'      => 'eValor',
 			'href'      => $this->url->link('module/webwinkelkeur', 'token=' . $this->session->data['token'], 'ssl'),
       		'separator' => ' :: '
    		);

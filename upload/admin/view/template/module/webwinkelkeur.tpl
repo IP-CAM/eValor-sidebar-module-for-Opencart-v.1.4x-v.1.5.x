@@ -12,57 +12,57 @@
   <?php } ?>
   <div class="box">
     <div class="heading">
-      <h1><img src="view/image/information.png" alt="" /> WebwinkelKeur</h1>
-      <div class="buttons"><a onclick="$('#form').submit();" class="button">Opslaan</a><a href="<?php echo $cancel; ?>" class="button">Annuleren</a></div>
+      <h1><img src="view/image/information.png" alt="" /> eValor</h1>
+      <div class="buttons"><a onclick="$('#form').submit();" class="button">Guardar</a><a href="<?php echo $cancel; ?>" class="button">Anular</a></div>
     </div>
     <div class="content">
       <form action="" method="post" enctype="multipart/form-data" id="form">
         <table class="form">
           <tr>
-            <td><span class="required">*</span> Webwinkel ID:</td>
+            <td><span class="required">*</span> ID de la tienda online:</td>
             <td><input type="text" name="shop_id" value="<?php echo $shop_id; ?>" /></td>
           </tr>
           <tr>
-            <td><span class="required">*</span> API key:</td>
+            <td><span class="required">*</span> Clave API:</td>
             <td><input type="text" name="api_key" value="<?php echo $api_key; ?>" /></td>
           </tr>
           <tr>
-            <td>Sidebar weergeven:</td>
+            <td>Mostrar sidebar:</td>
             <td>
               <label>
                 <input type="radio" name="sidebar" value="1" <?php if($sidebar) echo "checked"; ?> />
-                Ja
+                Si
               </label>
               <label>
                 <input type="radio" name="sidebar" value="0" <?php if(!$sidebar) echo "checked"; ?> />
-                Nee
+                No
               </label>
             </td>
           </tr>
           <tr>
-            <td>Sidebar positie:</td>
+            <td>Posición sidebar:</td>
             <td>
               <label>
                 <input type="radio" name="sidebar_position" value="left" <?php if($sidebar_position == 'left') echo "checked"; ?> />
-                Links
+                Izquierda
               </label>
               <label>
                 <input type="radio" name="sidebar_position" value="right" <?php if($sidebar_position == 'right') echo "checked"; ?> />
-                Rechts
+                Derecha
               </label>
             </td>
           </tr>
           <tr>
             <td>
-              Sidebar hoogte:<br/>
+              Altura sidebar:<br/>
               <span class="help">aantal pixels vanaf de bovenkant</span>
             </td>
             <td><input type="text" name="sidebar_top" size="2" value="<?php echo $sidebar_top; ?>" /></td>
           </tr>
           <tr>
             <td>
-              Uitnodiging versturen:<br />
-              <span class="help">alleen beschikbaar voor Plus-leden</span>
+              Enviar invitaciones:<br />
+              <span class="help">solo disponible para socios PLUS</span>
             </td>
             <td>
               <label>
@@ -81,8 +81,8 @@
           </tr>
           <tr>
             <td>
-              Wachttijd voor uitnodiging:<br/>
-              <span class="help">de uitnodiging wordt verstuurd nadat het opgegeven aantal dagen is verstreken</span>
+              Plazo para la invitación:<br/>
+              <span class="help">la invitación se envía una vez hayan pasado el número de días indicados</span>
             </td>
             <td><input type="text" name="invite_delay" size="2" value="<?php echo $invite_delay; ?>" /></td>
           </tr>
@@ -91,11 +91,11 @@
             <td>
               <label>
                 <input type="radio" name="tooltip" value="1" <?php if($tooltip) echo "checked"; ?> />
-                Ja
+                Si
               </label>
               <label>
                 <input type="radio" name="tooltip" value="0" <?php if(!$tooltip) echo "checked"; ?> />
-                Nee
+                No
               </label>
             </td>
           </tr>
@@ -119,7 +119,7 @@
   <?php if($invite_errors): ?>
   <div class="box">
     <div class="heading">
-      <h1><img src="view/image/warning.png" alt="" /> Fouten opgetreden bij het versturen van uitnodigingen</h1>
+      <h1><img src="view/image/warning.png" alt="" /> Ha habido algunos errores al enviar las invitaciones</h1>
     </div>
     <div class="content">
       <table>
@@ -130,7 +130,7 @@
             <?php if($invite_error['response']): ?>
             <?php echo htmlentities($invite_error['response'], ENT_QUOTES, 'UTF-8'); ?>
             <?php else: ?>
-            De Webwinkelkeur-server kon niet worden bereikt.
+            No se ha podido contactar con el servidor de eValor.
             <?php endif; ?>
           </td>
         </tr>
