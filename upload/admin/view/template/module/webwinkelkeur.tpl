@@ -31,7 +31,7 @@
             <td>
               <label>
                 <input type="radio" name="sidebar" value="1" <?php if($sidebar) echo "checked"; ?> />
-                Si
+                Sí
               </label>
               <label>
                 <input type="radio" name="sidebar" value="0" <?php if(!$sidebar) echo "checked"; ?> />
@@ -55,7 +55,7 @@
           <tr>
             <td>
               Altura sidebar:<br/>
-              <span class="help">aantal pixels vanaf de bovenkant</span>
+              <span class="help">número de pixeles desde arriba</span>
             </td>
             <td><input type="text" name="sidebar_top" size="2" value="<?php echo $sidebar_top; ?>" /></td>
           </tr>
@@ -67,15 +67,15 @@
             <td>
               <label>
                 <input type="radio" name="invite" value="1" <?php if($invite == 1) echo "checked"; ?> />
-                Ja, na elke bestelling
+                Sí, después de cada pedido
               </label><br />
               <label>
                 <input type="radio" name="invite" value="2" <?php if($invite == 2) echo "checked"; ?> />
-                Ja, alleen bij de eerste bestelling
+                Sí, sólo con el primer pedido
               </label><br />
               <label>
                 <input type="radio" name="invite" value="0" <?php if(!$invite) echo "checked"; ?> />
-                Nee, geen uitnodigingen versturen
+                No, no enviar invitaciones
               </label>
             </td>
           </tr>
@@ -87,11 +87,11 @@
             <td><input type="text" name="invite_delay" size="2" value="<?php echo $invite_delay; ?>" /></td>
           </tr>
           <tr>
-            <td>Tooltip weergeven:</td>
+            <td>Mostrar logo desplegable:</td>
             <td>
               <label>
                 <input type="radio" name="tooltip" value="1" <?php if($tooltip) echo "checked"; ?> />
-                Si
+                Sí
               </label>
               <label>
                 <input type="radio" name="tooltip" value="0" <?php if(!$tooltip) echo "checked"; ?> />
@@ -100,15 +100,15 @@
             </td>
           </tr>
           <tr>
-            <td>JavaScript-integratie:</td>
+            <td>Integración JavaScript:</td>
             <td>
               <label>
                 <input type="radio" name="javascript" value="1" <?php if($javascript) echo "checked"; ?> />
-                Ja
+                Sí
               </label>
               <label>
                 <input type="radio" name="javascript" value="0" <?php if(!$javascript) echo "checked"; ?> />
-                Nee
+                No
               </label>
             </td>
           </tr>

@@ -1,33 +1,28 @@
-WebwinkelKeur OpenCart module
-=============================
+Módulo Opencart para eValor
+===========================
 
-Deze module integreert de WebwinkelKeur sidebar module in uw webshop. De module 
-kan eenvoudig worden geïnstalleerd. Gebruik daarvoor de onderstaande 
-installatieinstructies.
+Este módulo integra el módulo sidebar eValor en su tienda online. Este módulo es
+fácil de instalar. Para eso puede utilizar las instrucciones.
 
-De module is getest met OpenCart versies 1.5.4 en later.
-
-U kunt de module ook laten installeren door de ontwikkelaar. Neem daarvoor per 
-e-mail contact op.
-
-(C) 2013 Albert Peschar <albert@peschar.net>
+Este módulo ha sido optimizado para la versión de Opencart 1.5.4 y superiores.
 
 
-Installatieinstructies
-----------------------
+Instrucciones de instalación
+----------------------------
 
-    1. Upload de bestanden in de map upload/ naar de webserver.
+    1. Suba los ficheros de la carpeta upload al servidor web.
 
-    2. De module kan nu worden ingeschakeld in de administratieinterface.
+    2. El módulo ahora se puede activar en su panel de control de OpenCart.
 
-    3. Vul uw webwinkel ID en API key in en configureer de module.
+    3. Introduzca el número ID de su tienda online y el código API y configure
+    el módulo. 
 
-    4. Wilt u uitnodigingen verzenden, dan moet er een cronjob worden ingesteld.  
-    De cronjob moet elke avond worden uitgevoerd en deze URL aanroepen:
+    4. Si quiere enviar invitaciones debe configurar un cronjob. El cronjob se
+    debe efectuar cada tarde con la url:
 
-      http://www.uw-webwinkel.nl/index.php?route=module/webwinkelkeur/cron
+      http://www.su-tienda-online.es/index.php?route=module/webwinkelkeur/cron
 
-    Hiervoor kunt u de volgende regel in uw crontab plaatsen:
+    Para llevar a cabo este proceso ponga la siguiente regla en su crontab.
 
-      30 23 * * * wget --quiet -O- 'http://www.uw-webwinkel.nl/index.php?route=module/webwinkelkeur/cron'
+      30 23 * * * wget --quiet -O- 'http://www.su-tienda-online.es/index.php?route=module/webwinkelkeur/cron'
 

@@ -69,12 +69,12 @@ class ControllerModuleWebwinkelkeur extends Controller {
         $this->request->post['shop_id'] = trim($this->request->post['shop_id']);
 
         if(!$this->request->post['shop_id'])
-            $this->data['error_warning'][] = 'Vul uw webwinkel ID in.';
+            $this->data['error_warning'][] = 'Su ID de tienda es obligatorio.';
         elseif(!ctype_digit($this->request->post['shop_id']))
-            $this->data['error_warning'][] = 'Uw webwinkel ID mag alleen cijfers bevatten.';
+            $this->data['error_warning'][] = 'Su ID de tienda solo puede contener números.';
 
         if($this->request->post['invite'] && !$this->request->post['api_key'])
-            $this->data['error_warning'][] = 'Vul uw API key in.';
+            $this->data['error_warning'][] = 'Para enviar invitaciones es obligatoria su clave API.';
 
         return empty($this->data['error_warning']);
     }
