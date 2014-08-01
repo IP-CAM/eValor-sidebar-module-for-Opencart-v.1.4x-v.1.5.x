@@ -9,5 +9,4 @@ mkdir -p dist
 
 pathspec="README.txt upload"
 
-git archive -o dist/opencart-webwinkelkeur.zip master $pathspec
-git archive -o dist/opencart-evalor.zip evalor $pathspec
+git archive -o dist/opencart-evalor.zip master $pathspec
