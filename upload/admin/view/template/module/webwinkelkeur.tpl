@@ -114,17 +114,18 @@
           </tr>
           <tr>
             <td>
-              Rich snippet sterren:<br/>
-              <span class="help">Voeg een <a href="https://support.google.com/webmasters/answer/99170?hl=nl">rich snippet</a> toe aan de footer. Google kan uw waardering dan in de zoekresultaten tonen. Gebruik op eigen risico.</span>
+              Estrellas Rich Snippet:<br/>
+              <span class="help">Añade un <a href="https://support.google.com/webmasters/answer/99170?hl=nl">Rich Snippet</a> al footer. Así Google podrá mostrar tu puntuación en los resultados de búsqueda.</span>
+              <!-- TODO: "Gebruik op eigen risico." -->
             </td>
             <td>
               <label>
                 <input type="radio" name="rich_snippet" value="1" <?php if($rich_snippet) echo "checked"; ?> />
-                Ja
+                Sí
               </label>
               <label>
                 <input type="radio" name="rich_snippet" value="0" <?php if(!$rich_snippet) echo "checked"; ?> />
-                Nee
+                No
               </label>
             </td>
           </tr>
