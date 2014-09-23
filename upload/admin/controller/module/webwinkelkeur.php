@@ -100,9 +100,8 @@ class ControllerModuleWebwinkelkeur extends Controller {
     }
 
     private function getSettings() {
-        $this->load->model('setting/setting');
-
-        $settings = $this->model_setting_setting->getSetting('webwinkelkeur');
+        $this->load->model('module/webwinkelkeur');
+        $settings = $this->model_module_webwinkelkeur->getSetting('webwinkelkeur');
 
         return array_merge(array(
             'shop_id'          => false,
