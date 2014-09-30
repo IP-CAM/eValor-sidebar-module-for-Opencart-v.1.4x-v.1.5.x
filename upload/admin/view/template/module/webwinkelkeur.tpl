@@ -115,8 +115,7 @@
           <tr>
             <td>
               Estrellas Rich Snippet:<br/>
-              <span class="help">Añade un <a href="https://support.google.com/webmasters/answer/99170?hl=nl">Rich Snippet</a> al footer. Así Google podrá mostrar tu puntuación en los resultados de búsqueda.</span>
-              <!-- TODO: "Gebruik op eigen risico." -->
+              <span class="help">Añade un <a href="https://support.google.com/webmasters/answer/99170?hl=nl">Rich Snippet</a> al footer. Así Google podrá mostrar tu puntuación en los resultados de búsqueda. Uso bajo su propia responsabilidad.</span>
             </td>
             <td>
               <label>
