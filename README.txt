@@ -1,28 +1,23 @@
-Módulo Opencart para eValor
-===========================
+Opencart module for eValor
+============================
 
-Este módulo integra el módulo sidebar eValor en su tienda online. Este módulo es
-fácil de instalar. Para eso puede utilizar las instrucciones.
+This module integrates the eValor sidebar module in your online store. This module is
+easy to install. For that you can use the instructions.
 
-Este módulo ha sido optimizado para la versión de Opencart 1.5.4 y superiores.
+This module has been optimized for Opencart version 1.5.4 and higher.
 
 
-Instrucciones de instalación
+Installation instructions
 ----------------------------
 
-    1. Suba los ficheros de la carpeta upload al servidor web.
+     1. Upload the files from the upload folder to the web server.
 
-    2. El módulo ahora se puede activar en su panel de control de OpenCart.
+     2. The module can now be activated in your OpenCart control panel.
 
-    3. Introduzca el número ID de su tienda online y el código API y configure
-    el módulo. 
+     3. Enter the ID number of your online store and the API code and configure
+     the module.
 
-    4. Si quiere enviar invitaciones debe configurar un cronjob. El cronjob se
-    debe efectuar cada tarde con la url:
+     To carry out this process put the following rule in your crontab.
 
-      http://www.su-tienda-online.es/index.php?route=module/webwinkelkeur/cron
-
-    Para llevar a cabo este proceso ponga la siguiente regla en su crontab.
-
-      30 23 * * * wget --quiet -O- 'http://www.su-tienda-online.es/index.php?route=module/webwinkelkeur/cron'
-
+       30 23 * * * wget --quiet -O- 'http://www.your-store-online.es/index.php?route=module/webwinkelkeur/cron' 
+       
